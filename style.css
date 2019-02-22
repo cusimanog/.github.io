@@ -67,3 +67,36 @@ body, html{
     font-size: 1em;
     width: 100%;
 }
+.hero-image2{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    background: url(background2.jpg) no-repeat center;
+    background-size: cover;
+}
+.container2{
+    position:absolute;
+    top: 25%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: left;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 28px;
+    margin: 20px;
+    
+}
+
+.container2 h1{
+    font-size: 50px;
+    letter-spacing: 0.17em;
+}
+.description2{
+    font-size: 26px;
+    text-align: left;
+    margin-top: 20px;
+    display: block;
+    text-shadow: 0 0 10px black;
+}
