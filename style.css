@@ -1,0 +1,70 @@
+*{
+    Margin: 0;
+    Padding: 0;
+}
+
+
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family:sans-serif;
+}
+.hero-image{
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    background: url(Background.jpg) no-repeat center;
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.container h1{
+    font-size: 72px;
+    letter-spacing: 0.2em;
+    
+}
+.container h1 span{
+    border: 10px solid white;
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.description{
+    margin: 20px;
+    display: block;
+    font-size: 26px;
+    text-shadow: 0 0 10px black;
+}
+.main-nav{
+    text-align:right;
+    float: none;
+    list-style: none;
+    margin-top: 0px;
+    overflow: hidden;
+    padding-bottom: 8px;
+    padding-top: 25px;
+}
+
+.main-nav li{
+    display: inline-block;
+}
+
+.main-nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 25px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 1em;
+    width: 100%;
+}
