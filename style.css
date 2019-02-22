@@ -47,7 +47,7 @@ body, html{
     text-shadow: 0 0 10px black;
 }
 .main-nav{
-    text-align:right;
+    text-align: right;
     float: none;
     list-style: none;
     margin-top: 0px;
@@ -74,8 +74,9 @@ body, html{
     background: url(background2.jpg) no-repeat center;
     background-size: cover;
 }
+
 .container2{
-    position:absolute;
+    position: absolute;
     top: 25%;
     left: 23%;
     transform: translate(-50%, -50%);
