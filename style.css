@@ -1,46 +1,42 @@
-*{
-    Margin: 0;
-    Padding: 0;
-}
-
-
-body, html{
+body, html {
     height: 100%;
     margin: 0;
     padding: 0;
     background: white;
     font-family:sans-serif;
 }
-.hero-image{
-    position: relative;
-    height: 800px;
+.hero-image {
+    height: 100vh;
     overflow: hidden;
     background: url(Background.jpg) no-repeat center;
     background-size: cover;
 }
-.container{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     overflow: hidden;
     text-align: center;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
+    height: 60vh;
 }
-.container h1{
+
+.container h1 {
     font-size: 72px;
     letter-spacing: 0.2em;
-    
+    text-shadow: 0 0 10px black;    
 }
-.container h1 span{
-    border: 10px solid white;
+
+.container h1 span {
+    border-bottom: 5px solid rgba(255,255,255,.3);
     padding: 6px 14px;
     display: inline-block;
 }
 
-.description{
+.description {
     margin: 20px;
     display: block;
     font-size: 26px;
@@ -68,18 +64,16 @@ body, html{
     width: 100%;
 }
 .hero-image2{
-    position: relative;
-    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     overflow: hidden;
     background: url(background2.jpg) no-repeat center;
     background-size: cover;
 }
 
 .container2{
-    position: absolute;
-    top: 25%;
-    left: 23%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     text-align: left;
     color: white;
