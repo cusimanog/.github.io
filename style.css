@@ -65,11 +65,11 @@ body, html {
 }
 .hero-image2{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     height: 100vh;
     overflow: hidden;
-    background: url(background2.jpg) no-repeat center;
+    background: linear-gradient(to right, rgba(0,0,0,0.4),rgba(0,0,0,0)),url(background2.jpg) no-repeat center;
     background-size: cover;
 }
 
