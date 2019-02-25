@@ -22,6 +22,7 @@ body, html {
     font-weight: 700;
     text-transform: uppercase;
     height: 60vh;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .container h1 {
@@ -94,4 +95,79 @@ body, html {
     margin-top: 20px;
     display: block;
     text-shadow: 0 0 10px black;
+}
+page-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color:rgb(63, 65, 82);
+}
+.logo {
+    color:white;
+    letter-spacing:.2em;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.page-nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.page-nav-links li{
+    list-style: none;
+}
+
+.page-nav-links li a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: normal;
+    font-size: 14px;
+}
+.burger{
+    display: none;
+}
+ .burger div{
+        width: 25px;
+        height: 2px;
+        background-color: white;
+        margin: 5px;
+}
+
+@media screen and (max-width: 1024px){
+    .page-nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .page-nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color:rgb(63, 65, 82);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+      
+    }
+    .page-nav-links li{
+        opacity: 0;
+}
+    .burger{
+        display: block;
+    }
+}
+
+.page-nav-active{
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in;
 }
