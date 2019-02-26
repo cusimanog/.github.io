@@ -124,7 +124,7 @@ pagenav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color:rgb(63, 65, 82);
+    background-color: rgba(0,0,0,.4);
 }
 
 .logo{
@@ -183,7 +183,7 @@ a:visited {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color:rgb(63, 65, 82);
+        background-color: rgba(0,0,0,.4);
         display: flex;
         flex-direction: column;
         align-items: center;
