@@ -6,6 +6,11 @@ body, html {
     background: White;
     font-family:sans-serif;
 }
+
+
+///////////////////////////////////////////////// HOMEPAGE ////////////////////////////////////////////////////////////////
+
+
 .hero-image {
     height: 100vh;
     overflow: hidden;
@@ -42,37 +47,77 @@ body, html {
     font-size: 20px;
 
 }
-.hero-image2{
+.sitepicture{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 100vh;
+    height: 70vh;
     overflow: hidden;
     background: linear-gradient(to right, rgba(0,0,0,0.4),rgba(0,0,0,0)),url(background2.jpg) no-repeat center;
     background-size: cover;
 }
 
-.container2{
-    overflow: hidden;
-    text-align: left;
-    color: white;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 28px;
-    margin: 20px;
+.sitecontainer{
+    display: right;
+    justify-content: space-around;
+    max-width: 28vw;
+    margin-left: 10vw;
 }
-.container2 h1{
-    font-size: 40px;
-    letter-spacing: 0.17em;
+.sitecontainer h1{
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 3em;
+    letter-spacing: .2em;
+    text-align: center;
 }
 
-.description2{
-    font-size: 20px;
+.sitedescription{
+    font-size: 1.5em;
     text-align: left;
     margin-top: 20px;
     display: block;
-    text-shadow: 0 0 10px black;
+    color: white;
 }
+.hikingpicture{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 70vh;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(0,0,0,0.4),rgba(0,0,0,0)),url(hiking.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.hikingcontainer{
+    display: right;
+    justify-content: space-around;
+    max-width: 28vw;
+    margin-left: 65vw;
+}
+.hikingcontainer h1{
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 3em;
+    letter-spacing: .2em;
+    text-align: center;
+}
+
+.hikingdescription{
+    font-size: 1.5em;
+    text-align: left;
+    margin-top: 20px;
+    display: block;
+    color: white;
+}
+
+
+///////////////////////////////////////////////// NAVIGATION BAR ////////////////////////////////////////////////////////
+
+
 
 pagenav{
     display: flex;
@@ -180,6 +225,10 @@ a:visited {
     transform: rotate(45deg)translate(-5px,-5px);
 }
 
+
+///////////////////////////////////////////////// LODGING PAGE //////////////////////////////////////////////////////////
+
+
 .hero-image3 {
     height: 45vh;
     overflow: hidden;
@@ -208,6 +257,10 @@ a:visited {
     margin-left: 10vw;
     
 }
+
+
+///////////////////////////////////////////////// TRANSPORTATION PAGE //////////////////////////////////////////////////
+
 .hero-image4 {
     height: 45vh;
     overflow: hidden;
