@@ -86,7 +86,7 @@ body, html {
     align-items: flex-start;
     height: 70vh;
     overflow: hidden;
-    background: linear-gradient(to right, rgba(0,0,0,0.4),rgba(0,0,0,0)),url(hiking.jpg) no-repeat center;
+    background: linear-gradient(to left, rgba(0,0,0,0.4),rgba(0,0,0,0)),url(hiking.jpg) no-repeat center;
     background-size: cover;
 }
 
