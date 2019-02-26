@@ -138,12 +138,19 @@ pagenav{
 
 a:link{
     color: white;
+    text-decoration: none;
 }
-a:visited {
+a:visited{
     color: white;
+    text-decoration: none;
 }
 a:hover{
-    color:rgb(200, 100, 130);
+    color:rgb(220, 160, 170);
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+     color: white;
 }
 
 .pagenav-links{
