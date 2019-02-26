@@ -150,3 +150,34 @@ page-nav{
     transform: translateX(0%);
     transition: transform 0.3s ease-in;
 }
+.page-nav-active{
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in;
+}
+.hero-image3 {
+    height: 45vh;
+    overflow: hidden;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)),url(lodging.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.container3{
+    display: right;
+    justify-content: space-around;
+    max-width: 50vw;
+    margin-left: 10vw;
+}
+.container3 h1{
+   
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    color: black;
+    font-weight: 700;
+    font-size: 2em;
+}    
+.container4 p{
+    text-align: left;
+    max-width: 50vw;
+    margin-left: 10vw;
+}
