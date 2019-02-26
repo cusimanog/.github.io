@@ -43,7 +43,7 @@ body, html {
     font-size: 26px;
     text-shadow: 0 0 10px black;
 }
-.hero-image2{
+.hero-image2 {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -53,7 +53,7 @@ body, html {
     background-size: cover;
 }
 
-.container2{
+.container2 {
     overflow: hidden;
     text-align: left;
     color: white;
@@ -61,27 +61,29 @@ body, html {
     text-transform: uppercase;
     padding: 28px;
     margin: 20px;
-    
 }
 
-.container2 h1{
+.container2 h1 {
     font-size: 40px;
     letter-spacing: 0.17em;
 }
-.description2{
+
+.description2 {
     font-size: 20px;
     text-align: left;
     margin-top: 20px;
     display: block;
     text-shadow: 0 0 10px black;
 }
-page-nav{
+
+pagenav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
     background-color:rgb(63, 65, 82);
 }
+
 .logo {
     color:white;
     letter-spacing:.2em;
@@ -89,43 +91,51 @@ page-nav{
     font-family: 'PT Sans', sans-serif;
 }
 
-.page-nav-links{
+a:visited {
+    color: white;
+}
+
+.pagenav-links {
     display: flex;
     justify-content: space-around;
     width: 40%;
 }
-.page-nav-links li{
+
+.pagenav-links li{
     list-style: none;
 }
 
-.page-nav-links li a{
+.pagenav-links li a{
     color: white;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: normal;
     font-size: 14px;
 }
-.burger{
+
+.burger {
     display: none;
 }
- .burger div{
+
+ .burger div {
         width: 25px;
         height: 2px;
         background-color: white;
         margin: 5px;
+        transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 1024px){
-    .page-nav-links{
+    .pagenav-links{
         width: 60%;
     }
 }
 
 @media screen and (max-width: 768px){
-    body{
+    body {
         overflow-x: hidden;
     }
-    .page-nav-links{
+    .pagenav-links {
         position: absolute;
         right: 0px;
         height: 92vh;
@@ -136,24 +146,42 @@ page-nav{
         align-items: center;
         width: 50%;
         transform: translateX(100%);
-      
+        transition: transform 0.5s ease-in;
     }
-    .page-nav-links li{
+    .pagenav-links li {
         opacity: 0;
 }
-    .burger{
+    .burger {
         display: block;
+        cursor: pointer;
     }
 }
 
-.page-nav-active{
+.pagenav-active{
     transform: translateX(0%);
-    transition: transform 0.3s ease-in;
 }
-.page-nav-active{
-    transform: translateX(0%);
-    transition: transform 0.3s ease-in;
+
+@keyframes pagenavLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
+
+.toggle .line1 {
+    transform: rotate(-45deg)translate(-5px,5px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg)translate(-5px,-5px);
+}
+
 .hero-image3 {
     height: 45vh;
     overflow: hidden;
@@ -161,13 +189,14 @@ page-nav{
     background-size: cover;
 }
 
-.container3{
+.container3 {
     display: right;
     justify-content: space-around;
     max-width: 50vw;
     margin-left: 10vw;
 }
-.container3 h1{
+
+.container3 h1 {
    
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
@@ -176,8 +205,15 @@ page-nav{
     font-weight: 700;
     font-size: 2em;
 }    
-.container4 p{
+
+.container4 p {
     text-align: left;
     max-width: 50vw;
     margin-left: 10vw;
 }
+
+.hero-image4 {
+    height: 45vh;
+    overflow: hidden;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)),url(transportation.jpg) no-repeat center;
+    background-size: cover;
