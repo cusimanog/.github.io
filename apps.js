@@ -9,7 +9,7 @@ const pagenavSlide = () => {
         pagenav.classList.toggle('pagenav-active');
        
         //Animate Links
-        pagenavLinks.forEach((link,index)=> {
+        pagenavLinks.forEach((link,index) => {
             if(link.style.animtion){
                 link.style.animation = '';
             } else {
@@ -23,3 +23,23 @@ const pagenavSlide = () => {
 }
 
 pagenavSlide();
+
+const initCarousel = () => {
+    const carousels = document.querySelectorAll(".carousel");
+
+    carousels.forEach(carousel => {
+        const images = carousel.querySelectorAll('img');
+        let index = 0;
+
+        images[index].classList.toggle('visible');
+
+        setInterval(() => {
+            images[index].classList.toggle('visible');
+            index= (index+1) % images.length;
+            images[index].classList.toggle('visible');
+        }, 5000);
+
+    });
+};
+
+initCarousel();
