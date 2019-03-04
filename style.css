@@ -1,10 +1,10 @@
-
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
     padding: 0;
     background: White;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 
@@ -14,9 +14,10 @@ body, html {
 .hero-image {
     height: 100vh;
     overflow: hidden;
-    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)),url(background.jpg) no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(background.jpg) no-repeat center;
     background-size: cover;
 }
+
 .container {
     display: flex;
     justify-content: center;
@@ -36,7 +37,7 @@ body, html {
 }
 
 .container h1 span {
-    border-bottom: 5px solid rgba(255,255,255,.3);
+    border-bottom: 5px solid rgba(255, 255, 255, .3);
     padding: 6px 14px;
     display: inline-block;
 }
@@ -47,23 +48,25 @@ body, html {
     font-size: 20px;
 
 }
-.sitepicture{
+
+.sitepicture {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     height: 70vh;
     overflow: hidden;
-    background: linear-gradient(to right, rgba(0,0,0,0.4),rgba(0,0,0,0)),url(background2.jpg) no-repeat center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(background2.jpg) no-repeat center;
     background-size: cover;
 }
 
-.sitecontainer{
+.sitecontainer {
     display: right;
     justify-content: space-around;
     max-width: 28vw;
     margin-left: 10vw;
 }
-.sitecontainer h1{
+
+.sitecontainer h1 {
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
     border-bottom: 1px solid white;
@@ -73,30 +76,32 @@ body, html {
     text-align: center;
 }
 
-.sitedescription{
+.sitedescription {
     font-size: 1.5em;
     text-align: left;
     margin-top: 20px;
     display: block;
     color: white;
 }
-.hikingpicture{
+
+.hikingpicture {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     height: 70vh;
     overflow: hidden;
-    background: linear-gradient(to left, rgba(0,0,0,0.4),rgba(0,0,0,0)),url(hiking.jpg) no-repeat center;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(hiking.jpg) no-repeat center;
     background-size: cover;
 }
 
-.hikingcontainer{
+.hikingcontainer {
     display: right;
     justify-content: space-around;
     max-width: 28vw;
     margin-left: 65vw;
 }
-.hikingcontainer h1{
+
+.hikingcontainer h1 {
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
     border-bottom: 1px solid white;
@@ -106,7 +111,7 @@ body, html {
     text-align: center;
 }
 
-.hikingdescription{
+.hikingdescription {
     font-size: 1.5em;
     text-align: left;
     margin-top: 20px;
@@ -119,85 +124,93 @@ body, html {
 
 
 
-pagenav{
+pagenav {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, .5);
 }
 
-.logo{
+.logo {
     color: white;
-    letter-spacing:.2em;
+    letter-spacing: .2em;
     font-size: 20px;
     font-family: 'PT Sans', sans-serif;
     font-weight: 500;
     text-decoration: none;
 }
 
-a:link{
+a:link {
     color: white;
     text-decoration: none;
-}
-a:visited{
-    color: white;
-    text-decoration: none;
-}
-a:hover{
-    color:rgb(220, 160, 170);
-    text-decoration: underline;
-}
-a:active {
-    text-decoration: underline;
-     color: white;
 }
 
-.pagenav-links{
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(220, 160, 170);
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+    color: white;
+}
+
+.pagenav-links {
     display: flex;
     justify-content: space-around;
     width: 40%;
 }
 
-.pagenav-links li{
+.pagenav-links li {
     list-style: none;
 }
 
-.pagenav-links li a{
+.pagenav-links li a {
     color: white;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: normal;
     font-size: 14px;
 }
-.burger{
+
+.burger {
     display: none;
 }
 
- .burger div{
-        width: 25px;
-        height: 2px;
-        background-color: white;
-        margin: 5px;
-        transition: all 0.3s ease;
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1024px){
-    .pagenav-links{
+@media screen and (max-width: 1024px) {
+    .pagenav-links {
         width: 60%;
     }
 }
 
-@media screen and (max-width: 768px){
-    body{
+@media screen and (max-width: 768px) {
+    body {
         overflow-x: hidden;
     }
-    .pagenav-links{
+
+    .pagenav-links {
         position: absolute;
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: rgba(0,0,0,.4);
+        background-color: rgba(0, 0, 0, .4);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -205,38 +218,43 @@ a:active {
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
-    .pagenav-links li{
+
+    .pagenav-links li {
         opacity: 0;
     }
-    .burger{
+
+    .burger {
         display: block;
         cursor: pointer;
     }
 }
 
-.pagenav-active{
+.pagenav-active {
     transform: translateX(0%);
 }
 
-@keyframes pagenavLinkFade{
-    from{
+@keyframes pagenavLinkFade {
+    from {
         opacity: 0;
         transform: translateX(50px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateX(0px);
     }
 }
 
-.toggle .line1{
-    transform: rotate(-45deg)translate(-5px,5px);
+.toggle .line1 {
+    transform: rotate(-45deg)translate(-5px, 5px);
 }
-.toggle .line2{
+
+.toggle .line2 {
     opacity: 0;
 }
-.toggle .line3{
-    transform: rotate(45deg)translate(-5px,-5px);
+
+.toggle .line3 {
+    transform: rotate(45deg)translate(-5px, -5px);
 }
 
 
@@ -246,29 +264,30 @@ a:active {
 .hero-image3 {
     height: 25vh;
     overflow: hidden;
-    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)),url(lodging.jpg) no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(lodging.jpg) no-repeat center;
     background-size: cover;
 }
 
-.container3{
+.container3 {
     justify-content: space-around;
     max-width: 50vw;
     margin-left: 10vw;
 }
-.container3 h1{
-   
+
+.container3 h1 {
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
     border-bottom: 1px solid black;
     color: black;
     font-weight: 700;
     font-size: 2em;
-}    
-.container4 p{
+}
+
+.container4 p {
     text-align: left;
     max-width: 75vw;
     margin: 0 10vw;
-    
+
 }
 
 
@@ -277,33 +296,96 @@ a:active {
 .hero-image4 {
     height: 45vh;
     overflow: hidden;
-    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)),url(transportation.jpg) no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(transportation.jpg) no-repeat center;
     background-size: cover;
 
 }
-    /*//////////////////////////////////////////////// CAROUSEL /////////////////////////////////////////////////*/
 
-    .carousel {
-        width: 100vw;
-        height: 40vh;
-        position: relative;
-        overflow: hidden;
-    }
+/*//////////////////////////////////////////////// CAROUSEL /////////////////////////////////////////////////*/
 
-    .carousel img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0;
-        transform: translateX(-5%) scale(1.2);
+.carousel {
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
 
-    }
-    .carousel img.visible {
-        opacity: 1;
-        width: 100%;
-        transform: translateX(0);
-        transition: opacity 1s, transform 5s ease-out;
-    }
+.carousel img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transform: translateX(-5%) scale(1.2);
+}
+
+.carousel div {
+    position: absolute;
+    display: none;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    font-size: 12px;
+}
+
+.carousel div.visible {
+    display: block;
+    opacity: 1;
+    transition: opacity;
+}
+
+.carousel img.visible {
+    opacity: 1;
+    width: 100%;
+    transform: translateX(0);
+    transition: opacity 1s, transform 10s ease-out;
+}
+
+.card {
+    display: flex;
+    padding: 20px;
+    color: black;
+}
+
+.card a {
+    color: blue;
+}
+.cardThumb {
+    flex-shrink: 0;
+    width: 160px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cardDetails {
+    padding: 20px;
+    padding-top: 0;
+    flex-grow: 1;
+}
+.cardTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.cardDescription {}
+
+.cardLinks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardLinks > * {
+    margin: 8px;
+}
