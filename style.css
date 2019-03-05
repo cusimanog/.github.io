@@ -451,6 +451,7 @@ footer {
     margin: 0 10vw;
 
 }
+/*//////////////////////////////////////////////// STAY PAGE /////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////// CAROUSEL /////////////////////////////////////////////////*/
 
 .carousel {
@@ -477,7 +478,7 @@ footer {
     left: 0;
     width: 100%;
     bottom: 0;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(33, 30, 31, .5);
     color: #FAF7F7; /* White smoke */;
     text-align: center;
     padding: 10px;
@@ -498,14 +499,23 @@ footer {
     transition: opacity 1s, transform 10s ease-out;
 }
 
+/*//////////////////////////////////////////////// CAROUSEL /////////////////////////////////////////////////*/
+
+.cardsection{
+    background: #FAF7F7; /* White smoke */;
+}
+
 .card {
     display: flex;
     padding: 20px;
-    color: black;
+    color: #221F20; /* Raisin Black */
 }
 
-.card a {
-    color: blue;
+.card a:link{
+    color: #6A686A; /* Dim Grey */
+}
+.card a:hover{
+   color: #221F20; /* Raisin Black */
 }
 .cardThumb {
     flex-shrink: 0;
@@ -524,12 +534,15 @@ footer {
     margin: 0;
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #221F20; /* Raisin black */;
     font-weight: 700;
     font-size: 18px;
+    color: #0371ac; /* Honolulu blue */
 }
 
-.cardDescription {}
+.cardDescription {
+    color: #221F20; /* Raisin black */
+}
 
 .cardLinks {
     display: flex;
@@ -539,4 +552,4 @@ footer {
 .cardLinks > * {
     margin: 8px;
 }
-/*//////////////////////////////////////////////// CAROUSEL /////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////// STAY PAGE /////////////////////////////////////////////////*/
