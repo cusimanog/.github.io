@@ -451,18 +451,6 @@ footer {
     margin: 0 10vw;
 
 }
-
-
-/*//////////////////////////////////////////////// TRANSPORTATION PAGE /////////////////////////////////////////////////*/
-
-.hero-image4 {
-    height: 45vh;
-    overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(transportation.jpg) no-repeat center;
-    background-size: cover;
-
-}
-
 /*//////////////////////////////////////////////// CAROUSEL /////////////////////////////////////////////////*/
 
 .carousel {
@@ -490,7 +478,7 @@ footer {
     width: 100%;
     bottom: 0;
     background: rgba(0, 0, 0, .5);
-    color: white;
+    color: #FAF7F7; /* White smoke */;
     text-align: center;
     padding: 10px;
     opacity: 0;
