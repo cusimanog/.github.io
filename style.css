@@ -1,24 +1,23 @@
-body,
-html {
+
+body, html {
     height: 100%;
     margin: 0;
     padding: 0;
     background: White;
-    font-family: sans-serif;
+    font-family:sans-serif;
 }
 
 
 /*//////////////////////////////////////////////// HOMEPAGE ///////////////////////////////////////////////////////////////*/
 
 
-.hero-image {
+.slide1 {
     height: 100vh;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(background.jpg) no-repeat center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3),rgba(0,0,0,0)),url(background.jpg) no-repeat center;
     background-size: cover;
 }
-
-.container {
+.slide1container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -28,146 +27,269 @@ html {
     font-weight: 500;
     text-transform: uppercase;
     height: 60vh;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.slide1container h1 {
+    font-size: 72px;
+    letter-spacing: 0.2em;
     font-family: 'PT Sans', sans-serif;
 }
 
-.container h1 {
-    font-size: 72px;
-    letter-spacing: 0.2em;
-}
-
-.container h1 span {
-    border-bottom: 5px solid rgba(255, 255, 255, .3);
+.slide1container h1 span {
+    border-bottom: 5px solid rgba(255,255,255,.3);
     padding: 6px 14px;
     display: inline-block;
 }
 
-.description {
+.slide1description {
+    font-family: 'Lato', sans-serif;
     margin: 20px;
     display: block;
-    font-size: 20px;
-
+    font-size: 1.4em;
+    text-shadow: 2px 2px 2px #000000;
 }
-
-.sitepicture {
+/*//////////////////////////////////////////////// SLIDE 1 ///////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////// SLIDE 2 ///////////////////////////////////////////////////////*/
+.slide2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FAF7F7; /* Blanched Almond */ 
+    height: 75vh;
+    overflow: hidden;
+    min-height: 50vh;
+}
+.slide2 p{
+    color: #292929;
+    font-size: 1.5em;
+    max-width: 40vw;
+    font-family: 'Lato', sans-serif;
+}
+.slide2 img {
+    border-radius: 25%;
+    height: 40vh;
+}
+/*//////////////////////////////////////////////// SLIDE 2 ///////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////// SLIDE 3 ///////////////////////////////////////////////////////*/
+.slide3picture{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 70vh;
+    height: 100vh;
     overflow: hidden;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(background2.jpg) no-repeat center;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,.6)),url(background2.jpg) no-repeat center;
     background-size: cover;
 }
 
-.sitecontainer {
-    display: right;
-    justify-content: space-around;
-    max-width: 28vw;
+.slide3container{
+    width: 60vw;
+    height: 60vh;
     margin-left: 10vw;
+    align-self: center;
+    display: block;
+    overflow: auto;
+  
 }
-
-.sitecontainer h1 {
+.slide3container h3{
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
     border-bottom: 1px solid white;
     color: white;
     font-size: 3em;
-    letter-spacing: .2em;
-    text-align: center;
+    letter-spacing: .1em;
+    text-align: left;
+    text-shadow: 2px 2px 2px #000000;
 }
 
-.sitedescription {
-    font-size: 1.5em;
+.slide3description{
+    font-size: 1.4em;
     text-align: left;
     margin-top: 20px;
     display: block;
     color: white;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 2px #000000;
+}
+.buttonpark{
+    background-color: white;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-size: .8em;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
 }
 
-.hikingpicture {
+.buttonpark:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+/*//////////////////////////////////////////////// SLIDE 3 ///////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////// SLIDE 4 ///////////////////////////////////////////////////////*/
+.slide4{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 70vh;
+    height: 65vh;
     overflow: hidden;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(hiking.jpg) no-repeat center;
+    background: #FAF7F7; /* White smoke */
     background-size: cover;
 }
 
-.hikingcontainer {
-    display: right;
-    justify-content: space-around;
-    max-width: 28vw;
-    margin-left: 65vw;
+.slide4container{
+    max-width: 100vw;
+    align-self: center;
+    display: block;
+    overflow: auto;
+    height: 60vh;
+    margin-right: 5vw;
 }
-
-.hikingcontainer h1 {
+.slide4container h3{
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
-    border-bottom: 1px solid white;
-    color: white;
+    color: #0371ac;  /* Honolulu blue */
     font-size: 3em;
     letter-spacing: .2em;
-    text-align: center;
+    text-align: left;
 }
 
-.hikingdescription {
-    font-size: 1.5em;
+.slide4description{
+    font-size: 1.4em;
     text-align: left;
     margin-top: 20px;
     display: block;
-    color: white;
+    color: #221F20; /* Raisin black */
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 20px;
+}
+.slide4 img {
+    border-radius: 0%;
+    height: 40vh;
+    margin: 10vh 5vw;
+    align-self: center;
+}
+.buttontransportation{
+    border: 1px solid #0371ac;
+    background-color: inherit;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    position: absolute;
 }
 
+.buttontransportation:hover {
+  background-color: #0371ac;  /* Honolulu blue */
+  Color: #FAF7F7; /* White smoke */
 
+}
+/*//////////////////////////////////////////////// SLIDE 4 ///////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////// SLIDE 5 ///////////////////////////////////////////////////////*/
+.slide5picture{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,.2)),url(hiking.jpg) no-repeat center;
+    background-size: cover;
+}
+.slide5container{
+    width: 40vw;
+    height: 100%;
+    margin-left: 10vw;
+    align-self: center;
+    display: block;
+    overflow: auto;
+}
+.slide5-links{
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    display: block;
+    overflow: auto;
+    height: 40vh;
+}
+.slide5-links li{
+}
+.slide5-links li a{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 25px; 
+    font-size: 1.4em;
+    text-shadow: 2px 2px 2px #000000;
+    text-align: left;
+}
+.slide5-links li a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.slide5container h3{
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3em;
+    letter-spacing: .2em;
+    text-align:left;
+    text-shadow: 2px 2px 2px #000000;
+}
+.slide5description{
+    font-size: 1.5em;
+    text-align: left;
+    letter-spacing: .04em;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    overflow: auto;
+    text-shadow: 2px 2px 2px #000000;
+}
+/*//////////////////////////////////////////////// SLIDE 5 ///////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////// HOMEPAGE ///////////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////// NAVIGATION BAR ///////////////////////////////////////////////////////*/
 
-
-
 pagenav {
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 1;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
-    background-color: rgba(0, 0, 0, .5);
+    min-height: 10vh;
+    background-color: white;
 }
 
 .logo {
-    color: white;
+    color: #221F20;
     letter-spacing: .2em;
-    font-size: 20px;
+    font-size: 1.2em;
     font-family: 'PT Sans', sans-serif;
     font-weight: 500;
     text-decoration: none;
+    margin-left: 5vw;
 }
 
-a:link {
-    color: white;
+a:link{
+    color: inherit;
     text-decoration: none;
 }
-
-a:visited {
-    color: white;
+a:visited{
+    color: inherit;
     text-decoration: none;
 }
-
-a:hover {
-    color: rgb(220, 160, 170);
+.pagenav-links li a:hover{
     text-decoration: underline;
+    color:#0371ac;
 }
-
-a:active {
+ a:active {
     text-decoration: underline;
     color: white;
 }
-
 .pagenav-links {
     display: flex;
     justify-content: space-around;
     width: 40%;
+    margin-right: 5vw;
 }
 
 .pagenav-links li {
@@ -175,11 +297,11 @@ a:active {
 }
 
 .pagenav-links li a {
-    color: white;
-    text-decoration: none;
+    color: #221F20;
     letter-spacing: 3px;
-    font-weight: normal;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 1em;
+    font-family: 'PT sans', sans-serif;
 }
 
 .burger {
@@ -189,7 +311,7 @@ a:active {
 .burger div {
     width: 25px;
     height: 2px;
-    background-color: white;
+    background-color: #221F20; /* Raisin black */
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -207,14 +329,14 @@ a:active {
 
     .pagenav-links {
         position: absolute;
-        right: 0px;
+        right: -5vw;
         height: 92vh;
         top: 8vh;
-        background-color: rgba(0, 0, 0, .4);
+        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 30%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
@@ -256,8 +378,48 @@ a:active {
 .toggle .line3 {
     transform: rotate(45deg)translate(-5px, -5px);
 }
+/*//////////////////////////////////////////////// NAVIGATION BAR ///////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////    FOOTER        ///////////////////////////////////////////////////////*/
+footer {
+    background: #F8E8D1; /* Blanched Almond */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 30vh;
+    overflow: hidden;
+    background-size: cover;
+}
 
-
+.footer-links{
+    width: 50vw;
+    height: 100%;
+    margin-left: 10vw;
+    display: block;
+    overflow: hidden;
+}
+.footer-links li{
+     list-style: none;
+     width: 6em;
+}
+.footer-links ul {
+    float: left;
+    display: flex;
+    flex-flow: wrap column;
+    column-count: 3;
+}
+.footer-links li a:hover{
+    text-decoration: underline;
+    color:#0371ac;
+}
+.footer-links li a{
+    font-family: 'PT Sans', sans-serif;
+    color: #221F20; /* Raisin black */
+}
+.footer-links h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+}
 /*//////////////////////////////////////////////// LODGING PAGE /////////////////////////////////////////////////////////*/
 
 
@@ -389,3 +551,4 @@ a:active {
 .cardLinks > * {
     margin: 8px;
 }
+/*//////////////////////////////////////////////// CAROUSEL /////////////////////////////////////////////////*/
