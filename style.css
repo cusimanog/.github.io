@@ -270,11 +270,12 @@ pagenav {
 }
 
 a:link{
-    color: inherit;
     text-decoration: none;
 }
+a:hover {
+    text-decoration: underline;
+}
 a:visited{
-    color: inherit;
     text-decoration: none;
 }
 .pagenav-links li a:hover{
@@ -446,13 +447,45 @@ footer {
     font-size: 1.3em;
 }
 /*//////////////////////////////////////////////// STAY PAGE /////////////////////////////////////////////////*/
+
+.stayContent {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.stayContent > * {
+    padding: 0 40px;
+}
+
+.stayText {
+    width: 40vw;
+}
+.stayText h1 {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: .1em;
+    text-align: left;
+}
+
+.stayText p {
+    font-size: 1.4em;
+    text-align: left;
+    display: block;
+    font-family: 'Lato', sans-serif;
+}
+
 /*//////////////////////////////////////////////// CAROUSEL /////////////////////////////////////////////////*/
 
 .carousel {
-    width: 100vw;
-    height: 70vh;
+    width: 40vw;
+    height: 65vh;
     position: relative;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .carousel img {
