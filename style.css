@@ -691,7 +691,26 @@ p2 {
     font-size: .1em;
     text-shadow: none;}
 /*////////////////////////////////////////////////SECTIONS OF THE EXPERIENCE PAGE /////////////////////////////////////////*/
+/*////////////////////////////////////////////////CREDITS PAGE /////////////////////////////////////////*/
+references{
+    display: flex;
+    padding: 5vw 6em;
+    height: 100vh;
+}
+references h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.4em;
+    color: #0371ac;  /* Honolulu blue */
+    letter-spacing: .1em;
+    text-align: center;
+}
+references p {
+    font-size: 1.1em;
+    text-align: left;
+    display: block;
+    font-family: 'Lato', sans-serif;}
 
+/*////////////////////////////////////////////////CREDITS PAGE /////////////////////////////////////////*/
 /*//////////////////////////////////////////////// NAVIGATION BAR ///////////////////////////////////////////////////////*/
 
 pagenav {
