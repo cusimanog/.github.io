@@ -6,15 +6,11 @@ body, html {
     background: #FAF7F7; /* White smoke */ 
     font-family:sans-serif;
 }
-
-
 /*//////////////////////////////////////////////// HOMEPAGE ///////////////////////////////////////////////////////////////*/
-
-
 .slide1 {
     height: 100vh;
     overflow: hidden;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.3),rgba(0,0,0,0)),url(background.jpg) no-repeat center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(background.jpg) no-repeat center;
     background-size: cover;
 }
 .slide1container {
@@ -49,26 +45,34 @@ body, html {
     font-size: 1.4em;
     text-shadow: 2px 2px 2px #000000;
 }
+p3 {
+    font-family: 'Lato', sans-serif;
+    font-size: .1em;
+    color: #221F20; /* Raisin black */
+    flex-direction: column;
+    display: flex;
+}
 /*//////////////////////////////////////////////// SLIDE 1 ///////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////// SLIDE 2 ///////////////////////////////////////////////////////*/
 .slide2{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
     height: 75vh;
     overflow: hidden;
     min-height: 50vh;
 }
 .slide2 p{
     color: #292929;
-    font-size: 1.5em;
+    font-size: 1.4em;
     max-width: 40vw;
     font-family: 'Lato', sans-serif;
+    flex-grow: 1;
 }
 .slide2 img {
     border-radius: 25%;
     height: 40vh;
-    border: 5px solid #0371ac;  /* Honolulu blue */
+    border: 3px solid #0371ac;  /* Honolulu blue */
 }
 /*//////////////////////////////////////////////// SLIDE 2 ///////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////// SLIDE 3 ///////////////////////////////////////////////////////*/
@@ -88,7 +92,7 @@ body, html {
     margin-left: 10vw;
     align-self: center;
     display: block;
-    overflow: auto;
+    overflow: hidden;
   
 }
 .slide3container h3{
@@ -100,6 +104,8 @@ body, html {
     letter-spacing: .1em;
     text-align: left;
     text-shadow: 2px 2px 2px #000000;
+    flex-grow: 1;
+    height: auto;
 }
 
 .slide3description{
@@ -111,15 +117,16 @@ body, html {
     font-family: 'Lato', sans-serif;
     padding-bottom: 20px;
     text-shadow: 2px 2px 2px #000000;
+    flex-grow: 1;
 }
 .buttonpark{
     background-color: white;
     transition-duration: 0.4s;
     cursor: pointer;
     font-size: .8em;
-    border-radius: 4px;
     font-family: 'Lato', sans-serif;
     padding: 10px;
+    flex-grow: 1;
 }
 
 .buttonpark:hover {
@@ -141,9 +148,9 @@ body, html {
     max-width: 100vw;
     align-self: center;
     display: block;
-    overflow: auto;
     height: 60vh;
     margin-right: 5vw;
+    overflow: hidden;
 }
 .slide4container h3{
     font-family: 'PT Sans', sans-serif;
@@ -152,6 +159,8 @@ body, html {
     font-size: 3em;
     letter-spacing: .2em;
     text-align: left;
+    flex-grow: 1;
+    height: auto;
 }
 
 .slide4description{
@@ -162,12 +171,14 @@ body, html {
     color: #221F20; /* Raisin black */
     font-family: 'Lato', sans-serif;
     padding-bottom: 20px;
+    flex-grow: 1;
+    height: auto;
 }
 .slide4 img {
-    border-radius: 0%;
     height: 40vh;
     margin: 10vh 5vw;
     align-self: center;
+    flex-grow: 1;
 }
 .buttontransportation{
     border: 1px solid #0371ac;
@@ -175,10 +186,9 @@ body, html {
     transition-duration: 0.4s;
     cursor: pointer;
     font-size: 1em;
-    border-radius: 4px;
     font-family: 'Lato', sans-serif;
     padding: 10px;
-    position: absolute;
+    flex-grow: 1;
 }
 
 .buttontransportation:hover {
@@ -190,28 +200,27 @@ body, html {
 /*//////////////////////////////////////////////// SLIDE 5 ///////////////////////////////////////////////////////*/
 .slide5picture{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     height: 100%;
     background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,.2)),url(hiking.jpg) no-repeat center;
     background-size: cover;
 }
 .slide5container{
     width: 40vw;
-    height: 100%;
+    height: 90%;
     margin-left: 10vw;
     align-self: center;
     display: block;
-    overflow: auto;
+    overflow: hidden;
 }
 .slide5-links{
     color: white;
     font-family: 'PT Sans', sans-serif;
     display: block;
-    overflow: auto;
-    height: 40vh;
+    height: auto;
+    width: auto;
 }
 .slide5-links li{
+    list-style: none;
 }
 .slide5-links li a{
     letter-spacing: 3px;
@@ -220,10 +229,14 @@ body, html {
     padding: 25px; 
     font-size: 1.4em;
     text-shadow: 2px 2px 2px #000000;
-    text-align: left;
+    text-align: center;
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 .slide5-links li a:hover{
-    background-color: rgba(255, 255, 255, 0.5);
+    background: white;
+    color:#221F20; /* Raisin black */
+    text-shadow: none;
 }
 .slide5container h3{
     font-family: 'PT Sans', sans-serif;
@@ -233,6 +246,9 @@ body, html {
     letter-spacing: .2em;
     text-align:left;
     text-shadow: 2px 2px 2px #000000;
+    height:auto;
+    flex-grow: 1;
+    width: auto;
 }
 .slide5description{
     font-size: 1.5em;
@@ -240,22 +256,402 @@ body, html {
     letter-spacing: .04em;
     color: white;
     font-family: 'Lato', sans-serif;
-    overflow: auto;
+    overflow: hidden;
+    text-shadow: 2px 2px 2px #000000;
+    flex-grow: 1;
+}
+.slide5picture p3{
+    font-family: 'Lato', sans-serif;
+    font-size: .1em;
+    text-shadow: none;
+    color: white;
+    flex-direction: column;
+    flex-grow: 1;
+    height: auto;
+    align-self: flex-end;
+}
+/*//// SLIDE 5 ////*/
+/*//////////////////////////////////////////////// HOMEPAGE ///////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////// STAY PAGE /////////////////////////////////////////////////*/
+
+.stayContent {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.stayContent > * {
+    padding: 0 40px;
+}
+
+.stayText {
+    width: 40vw;
+}
+.stayText h1 {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: .1em;
+    text-align: left;
+}
+
+.stayText p {
+    font-size: 1.4em;
+    text-align: left;
+    display: block;
+    font-family: 'Lato', sans-serif;
+}
+
+/*//// CAROUSEL ///*/
+
+.carousel {
+    width: 40vw;
+    height: 65vh;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.carousel img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transform: translateX(-5%) scale(1.2);
+}
+
+.carousel div {
+    position: absolute;
+    display: none;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: rgba(33, 30, 31, .5);
+    color: #FAF7F7; /* White smoke */;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    font-size: 12px;
+}
+
+.carousel div.visible {
+    display: block;
+    opacity: 1;
+    transition: opacity;
+}
+
+.carousel img.visible {
+    opacity: 1;
+    width: 100%;
+    transform: translateX(0);
+    transition: opacity 1s, transform 10s ease-out;
+}
+
+/*//// CAROUSEL //////*/
+
+.card {
+    display: flex;
+    padding: 20px;
+    color: #221F20; /* Raisin Black */
+}
+
+.card a:link{
+    color: #807E80; /* Trolley Grey */
+}
+.card a:hover{
+   color: #221F20; /* Raisin Black */
+}
+.cardThumb {
+    flex-shrink: 0;
+    width: 160px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cardDetails {
+    padding: 20px;
+    padding-top: 0;
+    flex-grow: 1;
+}
+.cardTitle {
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid #221F20; /* Raisin black */;
+    font-weight: 700;
+    font-size: 18px;
+    color: #0371ac; /* Honolulu blue */
+}
+
+.cardDescription {
+    color: #221F20; /* Raisin black */
+}
+
+.cardLinks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardLinks > * {
+    margin: 8px;
+}
+/*//////////////////////////////////////////////// STAY PAGE /////////////////////////////////////////////////*/
+
+/*/////////////////////////////////////////// TRANSPORTATION PAGE /////////////////////////////////////////////*/
+.content {
+    margin-top: 150px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+}
+
+.caption {
+    font-size: .6em;
+}
+
+.block {
+    display: flex;
+    margin: 60px;
+}
+.block>* {
+    margin: 20px;
+}
+.block>*:first-child {
+    margin-left: 0;
+}
+
+.block img {
+    height: 50vh;
+}
+.right.block {
+    display: flex;
+    flex-direction: row-reverse;
+}
+/*//////////////////////////////////////////////// TRANSPORTATION PAGE ///////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////// EXPERIENCES HOMEPAGE /////////////////////////////////////////*/
+.experiences{
+    height: 95%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.experiencespicture{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,.6)),url(experience.jpg) no-repeat center;
+    background-size: cover;
+}
+.experiences-links{
+    color: #221F20; /* Raisin black */
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.experiences-links li{
+    list-style: none;
+}
+.experiences-links li a{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: flex;
+    padding: 30px; 
+    margin: 6px;
+    flex-grow: 1;
+    width: auto;
+    flex-direction: row;
+    background:rgba(255, 255, 255, 0.8);
+    text-shadow:none;
+}
+.experiences-links li a:hover{
+    background-color: white;
+    color:#0371ac;  /* Honolulu blue */
+}
+.experiences h3{
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3em;
+    letter-spacing: .2em;
+    text-shadow: 2px 2px 2px #000000;
+    flex-grow: 1;
+    text-align: center;
+    height: 60%;
+}
+.experiencespicture p3{
+    font-family: 'Lato', sans-serif;
+    height: auto;
+    font-size: .1em;
+    text-shadow: none;
+    color: white;
+    align-self: baseline;
+    width: 100%;
+}
+/*//////////////////////////////////////////////// EXPERIENCES HOMEPAGE /////////////////////////////////////////*/
+/*////////////////////////////////////////////////SECTIONS OF THE EXPERIENCE PAGE /////////////////////////////////////////*/
+
+/*/Eat and Drink/*/ 
+.eintro {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(eatanddrink.jpg) no-repeat center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 60vh;
     text-shadow: 2px 2px 2px #000000;
 }
-/*//////////////////////////////////////////////// SLIDE 5 ///////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////// HOMEPAGE ///////////////////////////////////////////////////////////////*/
+.eintro p{
+    font-family: 'Lato', sans-serif;
+    margin: 20px;
+    display: block;
+    font-size: 1em;
+    text-shadow: 2px 2px 2px #000000;
+    letter-spacing: 0.2em;
+}
+.eintro h2 {
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    font-family: 'PT Sans', sans-serif;
+}
+/*/Outside/*/ 
+.Ointro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 60vh;
+    text-shadow: 2px 2px 2px #000000;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(outside.jpg) no-repeat center;
+    background-size: cover;
+}
+.ointro p{
+    font-family: 'Lato', sans-serif;
+    margin: 20px;
+    display: block;
+    font-size: 1em;
+    text-shadow: 2px 2px 2px #000000;
+    letter-spacing: 0.2em;
+}
+.ointro h2 {
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    font-family: 'PT Sans', sans-serif;
+}
+/*/siteseeing/*/ 
+.Sintro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 60vh;
+    text-shadow: 2px 2px 2px #000000;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(siteseeing.jpg) no-repeat center;
+    background-size: cover;
+}
+.sintro p{
+    font-family: 'Lato', sans-serif;
+    margin: 20px;
+    display: block;
+    font-size: 1em;
+    text-shadow: 2px 2px 2px #000000;
+    letter-spacing: 0.2em;
+}
+.sintro h2 {
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    font-family: 'PT Sans', sans-serif;
+}
+/*/ below styles apply to all expereience sections /*/
+.econtainers{
+    position: relative;
+    align-items: flex-start;
+    height: auto;
+    display: block;
+    width: 90vw;
+    overflow: hidden;
+    padding: 20px 5vw;
+}
+.econtainers2{
+    align-items: flex-start;
+    height: auto;
+    display: block;
+    width: 90vw;
+    overflow: hidden;
+    position: relative;
+    background-color:#E4E1E1;
+    padding: 20px 5vw;
+}
+econtainers img{
+    height: 30vh;
+    display: inline-block;
+    flex-direction: row;
+}
+econtainers h2{
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #0371ac; /* Honolulu blue */
+    flex-direction: column;
+    flex-grow: 1;
+    height: auto;
+    display: flex;
+}
+econtainers p{
+    color: #221F20; /* Raisin black */
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #221F20; /* Raisin black */;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 70vw;
+    height: auto;
+    display: flex;
+}
+p2 {
+    color: #221F20; /* Raisin black */
+    font-family: 'Lato', sans-serif;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 70vw;
+    height: auto;
+    display: flex;
+    font-size: .5em;
+    text-shadow: none;}
+/*////////////////////////////////////////////////SECTIONS OF THE EXPERIENCE PAGE /////////////////////////////////////////*/
+
 /*//////////////////////////////////////////////// NAVIGATION BAR ///////////////////////////////////////////////////////*/
 
 pagenav {
     position: fixed;
-    top: 0;
     width: 100%;
     z-index: 1;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 10vh;
+    height: 4em;
     background-color: white;
 }
 
@@ -270,17 +666,14 @@ pagenav {
 }
 
 a:link{
+    color: inherit;
     text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
 }
 a:visited{
     color: inherit;
     text-decoration: none;
 }
 .pagenav-links li a:hover{
-    text-decoration: underline;
     color:#0371ac;
 }
  a:active {
@@ -380,315 +773,50 @@ a:visited{
 .toggle .line3 {
     transform: rotate(45deg)translate(-5px, -5px);
 }
-/*//////////////////////////////////////////////// TRANSPORTATION PAGE ///////////////////////////////////////////////////////*/
-.content {
-    margin-top: 150px;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5em;
-}
-
-.caption {
-    font-size: .6em;
-}
-
-.block {
-    display: flex;
-    margin: 60px;
-}
-.block>* {
-    margin: 20px;
-}
-.block>*:first-child {
-    margin-left: 0;
-}
-
-.block img {
-    height: 50vh;
-}
-.right.block {
-    display: flex;
-    flex-direction: row-reverse;
-}
 /*//////////////////////////////////////////////// NAVIGATION BAR ///////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////    FOOTER        ///////////////////////////////////////////////////////*/
 footer {
-    background: white;
+    background: #221F20; /* Raisin Black */
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 30vh;
-    overflow: hidden;
-    background-size: cover;
+    height: 40vh;
 }
-
 .footer-links{
-    width: 50vw;
-    height: 100%;
-    margin-left: 10vw;
-    display: block;
-    overflow: hidden;
+    color: #221F20; /* Raisin black */
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    height: auto;
 }
 .footer-links li{
-     list-style: none;
-     width: 6em;
-}
-.footer-links ul {
-    float: left;
-    display: flex;
-    flex-flow: wrap column;
-    column-count: 3;
-}
-.footer-links li a:hover{
-    text-decoration: underline;
-    color:#0371ac;
+    list-style: none;
 }
 .footer-links li a{
-    font-family: 'PT Sans', sans-serif;
-    color: #221F20; /* Raisin black */
-}
-.footer-links h3{
+    letter-spacing: 3px;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.3em;
-}
-/*//////////////////////////////////////////////// STAY PAGE /////////////////////////////////////////////////*/
-
-.stayContent {
     display: flex;
-    width: 100%;
-    overflow: hidden;
-    padding: 40px;
-    margin-top: 100px;
-}
-
-.stayContent > * {
-    padding: 0 40px;
-}
-
-.stayText {
-    width: 40vw;
-}
-.stayText h1 {
-    font-family: 'PT Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 3em;
-    letter-spacing: .1em;
-    text-align: left;
-}
-
-.stayText p {
-    font-size: 1.4em;
-    text-align: left;
-    display: block;
-    font-family: 'Lato', sans-serif;
-}
-
-/*//////////////////////////////////////////////// CAROUSEL /////////////////////////////////////////////////*/
-
-.carousel {
-    width: 40vw;
-    height: 65vh;
-    position: relative;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-
-.carousel img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transform: translateX(-5%) scale(1.2);
-}
-
-.carousel div {
-    position: absolute;
-    display: none;
-    left: 0;
-    width: 100%;
-    bottom: 0;
-    background: rgba(33, 30, 31, .5);
-    color: #FAF7F7; /* White smoke */;
-    text-align: center;
-    padding: 10px;
-    opacity: 0;
-    font-size: 12px;
-}
-
-.carousel div.visible {
-    display: block;
-    opacity: 1;
-    transition: opacity;
-}
-
-.carousel img.visible {
-    opacity: 1;
-    width: 100%;
-    transform: translateX(0);
-    transition: opacity 1s, transform 10s ease-out;
-}
-
-/*//////////////////////////////////////////////// CAROUSEL /////////////////////////////////////////////////*/
-
-.card {
-    display: flex;
-    padding: 20px;
-    color: #221F20; /* Raisin Black */
-}
-
-.card a:link{
-    color: #807E80; /* Trolley Grey */
-}
-.card a:hover{
-   color: #221F20; /* Raisin Black */
-}
-.cardThumb {
-    flex-shrink: 0;
-    width: 160px;
-    height: 100px;
-    object-fit: cover;
-}
-
-.cardDetails {
-    padding: 20px;
-    padding-top: 0;
+    padding: 13px; 
+    margin: 6px;
     flex-grow: 1;
-}
-.cardTitle {
-    padding: 0;
-    margin: 0;
-    font-family: 'PT Sans', sans-serif;
-    text-transform: uppercase;
-    border-bottom: 1px solid #221F20; /* Raisin black */;
-    font-weight: 700;
-    font-size: 18px;
-    color: #0371ac; /* Honolulu blue */
-}
-
-.cardDescription {
-    color: #221F20; /* Raisin black */
-}
-
-.cardLinks {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.cardLinks > * {
-    margin: 8px;
-}
-/*//////////////////////////////////////////////// STAY PAGE /////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////// EXPERIENCES PAGE /////////////////////////////////////////*/
-.eintro {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-weight: 500;
-    text-transform: uppercase;
-    height: 60vh;
-    text-shadow: 2px 2px 2px #000000;
-    height: 60vh;
-    overflow: hidden;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(madrid-2713926.jpg) no-repeat center;
-    background-size: cover;
-}
-
-.eintro h2 {
-    font-size: 2em;
-    letter-spacing: 0.2em;
-    font-family: 'PT Sans', sans-serif;
-}
-
-.eintro h2 span {
-    border-bottom: 1px solid rgba(255,255,255,.3);
-    padding: 6px 14px;
-    display: inline-block;
-}
-
-.eintro p{
-    font-family: 'Lato', sans-serif;
-    margin: 20px;
-    display: block;
+    width: auto;
+    flex-direction: row;
+    background:rgba(255, 255, 255, 0.8);
     font-size: 1em;
-    text-shadow: 2px 2px 2px #000000;
-    letter-spacing: 0.2em;
 }
-.econtainers{
-    position: relative;
-    align-items: flex-start;
-    height: auto;
-    display: block;
-    width: 90vw;
-    overflow: hidden;
-    padding: 20px 5vw;
+.footer-links li a:hover{
+    background-color: white;
+    color:#0371ac;  /* Honolulu blue */
 }
-.econtainers img{
-    height: 20vh;
-    display: inline-block;
-    flex-direction: row;
-}
-.econtainers h2{
+.footer-logo{
+    color: white;
+    letter-spacing: .2em;
+    font-size: 1.2em;
     font-family: 'PT Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    color: #0371ac; /* Honolulu blue */
-    flex-direction: column;
-    flex-grow: 1;
-    height: auto;
-    display: flex;
-    
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 5vw;
 }
-.econtainers p{
-    color: #221F20; /* Raisin black */
-    font-family: 'Lato', sans-serif;
-    border-bottom: 2px solid #221F20; /* Raisin black */;
-    flex-direction: column;
-    flex-grow: 1;
-    width: 70vw;
-    height: auto;
-    display: flex;
-}
-.econtainers2{
-    align-items: flex-start;
-    height: auto;
-    display: block;
-    width: 90vw;
-    overflow: hidden;
-    position: relative;
-    background-color:#E4E1E1;
-    padding: 20px 5vw;
-
-}
-.econtainers2 img{
-    height: 20vh;
-    display: inline-block;
-    flex-direction: row;
-}
-.econtainers2 h2{
-    font-family: 'PT Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    color: #0371ac; /* Honolulu blue */
-    flex-direction: column;
-    flex-grow: 1;
-    height: auto;
-    display: flex;
-    
-}
-.econtainers2 p{
-    color: #221F20; /* Raisin black */
-    font-family: 'Lato', sans-serif;
-    border-bottom: 2px solid #221F20; /* Raisin black */;
-    flex-direction: column;
-    flex-grow: 1;
-    width: 70vw;
-    height: auto;
-    display: flex;
-}
-/*//////////////////////////////////////////////// EXPERIENCES PAGE /////////////////////////////////////////*/
+/*////////////////////////////////////////////////    FOOTER        ///////////////////////////////////////////////////////*/
