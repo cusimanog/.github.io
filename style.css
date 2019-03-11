@@ -450,7 +450,7 @@ p3 {
     font-size: 1.4em;
     color:#0371ac;  /* Honolulu blue */
     font-family: 'PT Sans', sans-serif;
-    
+    text-transform: uppercase;
 }
 .content p{
     font-size: 1.1em;
@@ -462,7 +462,6 @@ p3 {
     font-size: .1em;
     color: #221F20; /* Raisin black */
 }
-
 .block {
     display: flex;
     margin: 60px;
